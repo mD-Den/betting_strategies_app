@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Betting Strategie",
+            "Betting Strategies",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 33,
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
               onPressed: () async {
                 await Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => FavoritePage(),
+                    builder: (context) => const FavoritePage(),
                   ),
                 );
                 _listKey.currentState?.updateList();
