@@ -13,11 +13,6 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text(
             "Betting Strategies",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 33,
-              fontStyle: FontStyle.normal,
-            ),
           ),
           actions: [
             IconButton(

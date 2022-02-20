@@ -8,9 +8,8 @@ class FavoritePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "Favorite Strategies",
-            style: Theme.of(context).textTheme.headline5,
           ),
         ),
         body: const StrategyList(
