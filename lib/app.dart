@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return AdaptiveTheme(
       light: kLightTheme,
       dark: kDarkTheme,
-      initial: AdaptiveThemeMode.dark,
+      initial: AdaptiveThemeMode.light,
       builder: (ThemeData light, ThemeData dark) => MaterialApp(
         title: "Bettings Strategies",
         debugShowCheckedModeBanner: false,

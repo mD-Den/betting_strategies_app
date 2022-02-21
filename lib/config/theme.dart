@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final kDarkTheme = ThemeData.dark().copyWith(
+final kDarkTheme = ThemeData(
   colorScheme: ColorScheme.fromSwatch(
     primarySwatch: Colors.indigo,
   ).copyWith(secondary: Colors.black87),
@@ -12,6 +12,7 @@ final kDarkTheme = ThemeData.dark().copyWith(
         fontStyle: FontStyle.normal,
         fontSize: 30,
         fontWeight: FontWeight.bold,
+        color: Colors.white,
       )),
   textTheme: const TextTheme(
     headline6: TextStyle(
@@ -23,8 +24,26 @@ final kDarkTheme = ThemeData.dark().copyWith(
   ),
 );
 
-final kLightTheme = ThemeData.light().copyWith(
+final kLightTheme = ThemeData(
+  colorScheme: ColorScheme.fromSwatch(
+    primarySwatch: Colors.amber,
+  ).copyWith(secondary: Colors.deepOrange),
+  scaffoldBackgroundColor: Colors.blue[200],
+  primaryColor: Colors.white,
   appBarTheme: const AppBarTheme(
-    color: Colors.blue,
+      color: Colors.deepOrange,
+      titleTextStyle: TextStyle(
+        fontStyle: FontStyle.normal,
+        fontSize: 30,
+        fontWeight: FontWeight.bold,
+        color: Colors.black,
+      )),
+  textTheme: const TextTheme(
+    headline6: TextStyle(
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      fontStyle: FontStyle.italic,
+      color: Colors.black,
+    ),
   ),
 );

@@ -31,7 +31,7 @@ class _DetailsPageState extends State<DetailsPage> {
         title: FittedBox(
           child: Text(
             widget.strategy.title,
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).appBarTheme.titleTextStyle,
           ),
         ),
         actions: [
